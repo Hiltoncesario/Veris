@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veris | Soluções Audiométricas</title>
+
+<style>
+:root {
+    --primary: #5A2D82; /* púrpura */
+    --dark: #111;
+    --light: #ffffff;
+    --gray: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+header h1 {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(135deg, var(--primary), #2c1640);
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: white;
+    color: var(--primary);
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 10%;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+/* SOBRE */
+.about {
+    background: var(--gray);
+}
+
+/* PRODUTO */
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.product ul {
+    margin-top: 20px;
+}
+
+.product li {
+    margin-bottom: 10px;
+}
+
+/* EQUIPE */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* CONTATO */
+.contact {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background: #000;
+    color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .product {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Veris</h1>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produto">Audiométricas</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Soluções Audiométricas</h2>
+        <p>A voz é o futuro das pesquisas. Capturamos opiniões reais com precisão e profundidade.</p>
+        <a href="#contato" class="btn">Fale conosco</a>
+    </div>
+</section>
+
+<section id="sobre" class="about">
+    <h2 class="section-title">Quem somos</h2>
+    <p>
+        A Veris é uma empresa de pesquisa de mercado e opinião orientada a gerar inteligência confiável para decisões estratégicas.
+        Somos especializados em captar a voz real da população, combinando tecnologias e metodologias inovadoras.
+    </p>
+    <br>
+    <p>
+        Nossa equipe conta com profissionais com mais de 20 anos de experiência no setor, reconhecidos pelo rigor técnico,
+        confiabilidade e agilidade na entrega.
+    </p>
+</section>
+
+<section id="produto">
+    <h2 class="section-title">Audiométricas</h2>
+
+    <div class="product">
+        <div>
+            <p>
+                Audiométricas é um método híbrido que combina coleta estruturada e narrativa em áudio,
+                permitindo análise profunda do discurso em escala.
+            </p>
+        </div>
+
+        <div>
+            <ul>
+                <li>Perguntas fechadas estruturadas</li>
+                <li>Elicitação narrativa por áudio</li>
+                <li>Coleta remota via apps</li>
+                <li>Análise multimodal</li>
+            </ul>
+        </div>
+    </div>
+
+    <br><br>
+
+    <p>
+        Mais do que pesquisa, entregamos entendimento acionável com base em linguagem natural e comportamento real.
+    </p>
+</section>
+
+<section id="equipe">
+    <h2 class="section-title">Equipe</h2>
+
+    <div class="team">
+
+        <div class="member">
+            <img src="danilo.jpg" alt="Danilo">
+            <h3>Danilo Cersosimo</h3>
+            <p>Cientista social (USP), mestre pela UCL. Atua há mais de 20 anos em pesquisa e análise de tendências.</p>
+        </div>
+
+        <div class="member">
+            <img src="hilton.jpg" alt="Hilton">
+            <h3>Hilton Cesario Fernandes</h3>
+            <p>Cientista político (USP). Especialista em comportamento eleitoral e análise de dados.</p>
+        </div>
+
+        <div class="member">
+            <img src="rupak.jpg" alt="Rupak">
+            <h3>Rupak Patitunda</h3>
+            <p>Mestre pela LSE. Especialista em métodos de pesquisa social e análise de dados complexos.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato" class="contact">
+    <h2 class="section-title">Contato</h2>
+    <p>Entre em contato para saber mais sobre nossas soluções</p>
+    <br>
+    <p><a href="tel:+5511999999999">+55 11 9999-9999</a></p>
+</section>
+
+<footer>
+    © 2026 Veris — Todos os direitos reservados
+</footer>
+
+</body>
+</html>
